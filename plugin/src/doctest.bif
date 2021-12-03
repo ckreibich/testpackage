@@ -2,7 +2,16 @@ module Corelight::Doctest;
 
 %%{
 
-// This block is for required includes, declarations, and helper functions.
+#include <zeek/3rdparty/doctest.h>
+
+TEST_SUITE_BEGIN("doctest-bif");
+
+TEST_CASE("demotest2")
+        {
+        CHECK(true);
+        }
+
+TEST_SUITE_END();
 
 %%}
 

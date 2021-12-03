@@ -1,3 +1,5 @@
+#include <zeek/3rdparty/doctest.h>
+
 #include "config.h"
 #include "Plugin.h"
 
@@ -15,3 +17,12 @@ zeek::plugin::Configuration Plugin::Configure()
 	config.version.patch = VERSION_PATCH;
 	return config;
 	}
+
+TEST_SUITE_BEGIN("doctest-cc");
+
+TEST_CASE("demotest1")
+        {
+        CHECK(true);
+        }
+
+TEST_SUITE_END();
