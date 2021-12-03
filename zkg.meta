@@ -1,0 +1,18 @@
+[package]
+script_dir = scripts
+build_command = ./configure && cd build && make
+test_command = cd testing && btest -c btest.cfg
+summary = TODO: A summary of Doctest in one line
+description = TODO: A more detailed description of Doctest.
+	It can span multiple lines, with this indentation.
+
+[template]
+source = package-template
+version = v0.99.0
+zkg_version = 2.12.0
+features = plugin
+
+[template_vars]
+name = Doctest
+namespace = Corelight
+
